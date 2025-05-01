@@ -388,7 +388,7 @@
     invoke-virtual {p1}, Lcom/papa91/arc/bean/PopwindowBean;->isPopup()Z
 
     move-result p2
-
+    const/4 p2, 0x0
     if-eqz p2, :cond_4
 
     .line 6
