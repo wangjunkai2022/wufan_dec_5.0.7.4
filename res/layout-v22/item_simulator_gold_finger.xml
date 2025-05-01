@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffcecfd1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvGoldFinger" android:background="@drawable/shape_stroke_item_simulator_gold_finger" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="0.0dip" android:layout_height="@dimen/wdp70" android:text="登录-新武将全技能" android:maxLines="2" android:paddingHorizontal="@dimen/wdp16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp100" android:textColor="@color/black" android:gravity="center" android:id="@id/bg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="残局" app:actualImageScaleType="fitXY" app:layout_constraintDimensionRatio="395:220" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImageScaleType="fitXY" />
+</androidx.constraintlayout.widget.ConstraintLayout>

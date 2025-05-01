@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statubar" android:layout_width="wrap_content" android:layout_height="@dimen/wdp1" />
+    <RelativeLayout android:id="@id/headview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/statubar">
+        <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon_discover" />
+        <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:text="设置伪装密码" android:singleLine="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed-medium" style="@style/TextViewStyle_18sp" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff777777" android:layout_gravity="center_horizontal" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" android:text="设置进入悟饭的6位密码" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llPwd" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/include_hide_app_pwd" />
+        <include layout="@layout/include_hide_app_pwd" />
+        <include layout="@layout/include_hide_app_pwd" />
+        <include layout="@layout/include_hide_app_pwd" />
+        <include layout="@layout/include_hide_app_pwd" />
+        <include layout="@layout/include_hide_app_pwd" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/rvKeyBoard" android:paddingLeft="@dimen/wdp36" android:paddingRight="@dimen/wdp36" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/wdp36" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+</LinearLayout>

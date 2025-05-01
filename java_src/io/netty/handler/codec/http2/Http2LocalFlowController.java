@@ -1,0 +1,15 @@
+package io.netty.handler.codec.http2;
+
+import io.netty.buffer.ByteBuf;
+/* loaded from: classes6.dex */
+public interface Http2LocalFlowController extends Http2FlowController {
+    boolean consumeBytes(Http2Stream http2Stream, int i4) throws Http2Exception;
+
+    Http2LocalFlowController frameWriter(Http2FrameWriter http2FrameWriter);
+
+    int initialWindowSize(Http2Stream http2Stream);
+
+    void receiveFlowControlledFrame(Http2Stream http2Stream, ByteBuf byteBuf, int i4, boolean z4) throws Http2Exception;
+
+    int unconsumedBytes(Http2Stream http2Stream);
+}

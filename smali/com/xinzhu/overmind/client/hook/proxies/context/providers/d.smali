@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/xinzhu/overmind/client/hook/proxies/context/providers/d;
+.super Ljava/lang/Object;
+.source "VContentProvider.java"
+
+
+# virtual methods
+.method public abstract b(Landroid/os/IInterface;Ljava/lang/String;)Landroid/os/IInterface;
+.end method

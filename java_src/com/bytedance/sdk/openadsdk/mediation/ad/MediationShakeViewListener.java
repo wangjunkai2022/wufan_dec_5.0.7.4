@@ -1,0 +1,5 @@
+package com.bytedance.sdk.openadsdk.mediation.ad;
+/* loaded from: classes2.dex */
+public interface MediationShakeViewListener {
+    void onDismissed();
+}

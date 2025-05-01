@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statubar" android:layout_width="wrap_content" android:layout_height="@dimen/wdp90" />
+    <RelativeLayout android:id="@id/headview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/statubar">
+        <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" />
+        <TextView android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:text="记事本" android:singleLine="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed-medium" style="@style/TextViewStyle_18sp" />
+        <ImageView android:id="@id/ic_add" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="gone" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/ic_notebook_add" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <EditText android:textColor="#ff000000" android:textColorHint="#ff000000" android:gravity="start|center|top" android:id="@id/etNote" android:background="@drawable/shape_bg_et_notebook" android:padding="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp100" android:hint="输入你想记录的内容…" android:layout_marginHorizontal="@dimen/wdp30" />
+</LinearLayout>

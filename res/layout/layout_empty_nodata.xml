@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/wdp450"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/wdp120" android:layout_height="wrap_content" android:src="@drawable/papa_loading_null" android:adjustViewBounds="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff908f8f" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="没有数据" />
+</LinearLayout>

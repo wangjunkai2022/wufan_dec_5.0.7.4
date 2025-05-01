@@ -1,0 +1,85 @@
+package com.join.android.app.mgsim.wufun.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.join.android.app.mgsim.wufun.R;
+/* loaded from: classes3.dex */
+public final class CropTitleLayoutBinding implements ViewBinding {
+    @NonNull
+
+    /* renamed from: b  reason: collision with root package name */
+    private final RelativeLayout f18288b;
+    @NonNull
+
+    /* renamed from: c  reason: collision with root package name */
+    public final ImageView f18289c;
+    @NonNull
+
+    /* renamed from: d  reason: collision with root package name */
+    public final RelativeLayout f18290d;
+    @NonNull
+
+    /* renamed from: e  reason: collision with root package name */
+    public final Button f18291e;
+    @NonNull
+
+    /* renamed from: f  reason: collision with root package name */
+    public final TextView f18292f;
+
+    private CropTitleLayoutBinding(@NonNull RelativeLayout relativeLayout, @NonNull ImageView imageView, @NonNull RelativeLayout relativeLayout2, @NonNull Button button, @NonNull TextView textView) {
+        this.f18288b = relativeLayout;
+        this.f18289c = imageView;
+        this.f18290d = relativeLayout2;
+        this.f18291e = button;
+        this.f18292f = textView;
+    }
+
+    @NonNull
+    public static CropTitleLayoutBinding bind(@NonNull View view) {
+        int i4 = R.id.back_image;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, R.id.back_image);
+        if (imageView != null) {
+            RelativeLayout relativeLayout = (RelativeLayout) view;
+            i4 = R.id.searchImage;
+            Button button = (Button) ViewBindings.findChildViewById(view, R.id.searchImage);
+            if (button != null) {
+                i4 = R.id.title_textview;
+                TextView textView = (TextView) ViewBindings.findChildViewById(view, R.id.title_textview);
+                if (textView != null) {
+                    return new CropTitleLayoutBinding(relativeLayout, imageView, relativeLayout, button, textView);
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i4)));
+    }
+
+    @NonNull
+    public static CropTitleLayoutBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    /* renamed from: a */
+    public RelativeLayout getRoot() {
+        return this.f18288b;
+    }
+
+    @NonNull
+    public static CropTitleLayoutBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z4) {
+        View inflate = layoutInflater.inflate(R.layout.crop_title_layout, viewGroup, false);
+        if (z4) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/wdp16" android:paddingStart="@dimen/wdp30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewUnselected" android:background="@drawable/shape_indicator_unselected" android:layout_width="@dimen/wdp16" android:layout_height="@dimen/wdp16" />
+    <View android:id="@id/viewSelected" android:background="@drawable/shape_indicator_selected" android:visibility="gone" android:layout_width="@dimen/wdp45" android:layout_height="@dimen/wdp16" />
+</FrameLayout>

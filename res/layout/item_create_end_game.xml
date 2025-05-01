@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp81">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image_game" android:layout_width="@dimen/wdp56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/wdp8" app:viewAspectRatio="1.0" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff111111" android:gravity="center_vertical" android:id="@id/tv_sub_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp12" android:text="在游戏中设定一个开始挑战的场景" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

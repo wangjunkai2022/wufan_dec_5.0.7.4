@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp14" android:layout_marginRight="@dimen/wdp14" android:layout_marginBottom="@dimen/wdp30" android:layout_marginHorizontal="@dimen/wdp14" app:cardBackgroundColor="#fffea00a" app:cardCornerRadius="@dimen/wdp72"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp65" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvBtn" android:layout_width="fill_parent" android:layout_height="@dimen/wdp144" android:text="+" android:fontFamily="sans-serif-condensed-medium" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp60" android:src="@drawable/ic_calculator_delete" android:adjustViewBounds="true" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/outside" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llMain" android:background="@drawable/shape_item_top_radius" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp97">
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="请告诉我们卸载原因" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/ivClose" android:padding="@dimen/wdp26" android:layout_width="@dimen/wdp82" android:layout_height="@dimen/wdp82" android:src="@drawable/close_icon" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvReportType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_marginHorizontal="@dimen/wdp30" />
+        <EditText android:textSize="@dimen/wdp28" android:textColor="@color/black" android:textColorHint="#ffa8a8a8" android:gravity="start|center|top" android:id="@id/etDesc" android:background="@drawable/shape_fafafa_r_8" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp198" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp8" android:layout_marginRight="@dimen/wdp30" android:hint="更多理由…" android:maxLength="100" android:layout_marginHorizontal="@dimen/wdp30" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/btnSubmit" android:background="@drawable/btn_289dff_dfdfdf_r_6" android:layout_width="fill_parent" android:layout_height="@dimen/wdp76" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp83" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp52" android:text="提交并卸载" android:layout_marginHorizontal="@dimen/wdp30" />
+    </LinearLayout>
+</LinearLayout>

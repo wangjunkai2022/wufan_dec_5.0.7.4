@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" app:tabGravity="start" app:tabIndicator="@drawable/discount_indicator_game_main" app:tabIndicatorColor="#ffff7468" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="@dimen/wdp6" app:tabMinWidth="@dimen/wdp92" app:tabMode="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabRippleColor="@color/transparent" app:tabSelectedTextColor="#ff000000" app:tabTextAppearance="@style/DiscountEveryDayNewTabLayout" app:tabTextColor="#ff000000" />
+    <com.join.mgps.customview.NestedScrollableHost android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.customview.NestedScrollableHost>
+</LinearLayout>

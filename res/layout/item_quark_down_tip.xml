@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:layout_marginTop="@dimen/wdp12" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/ic_quark_circle_black" />
+    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff1f1f1f" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存资源永不丢失" android:lineSpacingExtra="@dimen/wdp10" />
+</LinearLayout>

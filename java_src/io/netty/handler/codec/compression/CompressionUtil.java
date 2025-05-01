@@ -1,0 +1,29 @@
+package io.netty.handler.codec.compression;
+
+import io.netty.buffer.ByteBuf;
+import java.nio.ByteBuffer;
+/* loaded from: classes6.dex */
+final class CompressionUtil {
+    private CompressionUtil() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void checkChecksum(ByteBufChecksum byteBufChecksum, ByteBuf byteBuf, int i4) {
+        byteBufChecksum.reset();
+        byteBufChecksum.update(byteBuf, byteBuf.readerIndex(), byteBuf.readableBytes());
+        int value = (int) byteBufChecksum.getValue();
+        if (value != i4) {
+            throw new DecompressionException(String.format("stream corrupted: mismatching checksum: %d (expected: %d)", Integer.valueOf(value), Integer.valueOf(i4)));
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static ByteBuffer safeNioBuffer(ByteBuf byteBuf) {
+        return byteBuf.nioBufferCount() == 1 ? byteBuf.internalNioBuffer(byteBuf.readerIndex(), byteBuf.readableBytes()) : byteBuf.nioBuffer();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static ByteBuffer safeNioBuffer(ByteBuf byteBuf, int i4, int i5) {
+        return byteBuf.nioBufferCount() == 1 ? byteBuf.internalNioBuffer(i4, i5) : byteBuf.nioBuffer(i4, i5);
+    }
+}

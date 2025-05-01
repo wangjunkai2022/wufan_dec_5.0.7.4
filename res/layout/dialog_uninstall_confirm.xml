@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/wdp602" android:layout_height="@dimen/wdp455" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/wdp18" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff202020" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp44" android:text="确定要清理游戏进度吗？" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff202020" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp122" android:text="游戏进度清理后不可恢复，请谨慎选择" />
+        <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:layout_width="@dimen/wdp210" android:layout_height="@dimen/wdp76" android:layout_marginBottom="@dimen/wdp46" android:layout_marginStart="@dimen/wdp62" app:cardBackgroundColor="#ffd2d2d2" app:cardCornerRadius="@dimen/wdp8">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/tvCancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="修改" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_gravity="end|bottom|center" android:layout_width="@dimen/wdp210" android:layout_height="@dimen/wdp76" android:layout_marginBottom="@dimen/wdp46" android:layout_marginEnd="@dimen/wdp62" app:cardBackgroundColor="#ff3ca4fd" app:cardCornerRadius="@dimen/wdp8">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:id="@id/tvConfirm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="清理" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/left" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/pic" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pic" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="2:3" app:layout_constraintEnd_toStartOf="@id/right" app:layout_constraintHorizontal_weight="10.0" app:layout_constraintStart_toEndOf="@id/left" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/right" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/pic" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close" android:visibility="gone" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:layout_margin="@dimen/wdp10" android:src="@drawable/close_round_white" app:layout_constraintBottom_toTopOf="@id/pic" app:layout_constraintStart_toEndOf="@id/pic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

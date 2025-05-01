@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:cardCornerRadius="@dimen/wdp8" fresco:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/sdv_image" android:layout_width="fill_parent" android:layout_height="@dimen/wdp332" android:src="@drawable/main_normal_icon" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+</androidx.cardview.widget.CardView>

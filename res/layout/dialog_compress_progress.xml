@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_ffffff_r18" android:paddingTop="@dimen/wdp28" android:paddingBottom="@dimen/wdp22" android:layout_width="@dimen/wdp462" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:layout_width="fill_parent" android:layout_height="@dimen/wdp20" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <TextView android:textSize="@dimen/wdp18" android:textColor="#ff363636" android:gravity="center" android:id="@id/tv_progress_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp16" android:text="压缩中(50.45%),请耐心等待..." />
+    </LinearLayout>
+</LinearLayout>

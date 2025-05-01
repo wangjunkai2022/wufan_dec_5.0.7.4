@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/bgExpand" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_mod_game_recommend_black_expand" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rlContent" android:paddingLeft="@dimen/wdp3" android:paddingRight="@dimen/wdp3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="@dimen/wdp48">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_list_type" android:layout_width="0.0dip" android:layout_height="@dimen/wdp48" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llExpand" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/ivExpand" android:paddingLeft="@dimen/wdp11" android:paddingRight="@dimen/wdp11" android:visibility="gone" android:layout_width="@dimen/wdp54" android:layout_height="fill_parent" android:src="@drawable/ic_introduction_expand" android:adjustViewBounds="true" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3392ff" android:gravity="center" android:id="@id/tv_draft" android:background="@drawable/shape_rect_3392ff_r4_stroke" android:visibility="gone" android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp42" android:layout_marginLeft="@dimen/wdp8" android:layout_marginRight="@dimen/wdp8" android:text="投稿" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/divider" android:background="#ff323744" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_below="@id/ll_head" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_head" />
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btnShrinkIntroduction" android:visibility="gone" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp180" android:layout_marginBottom="@dimen/wdp8" android:src="@drawable/ic_mod_game_recommend_shrink" android:layout_centerVertical="true" android:paddingStart="@dimen/wdp14" android:paddingEnd="@dimen/wdp20" />
+</RelativeLayout>

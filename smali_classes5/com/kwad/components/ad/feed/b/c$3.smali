@@ -1,0 +1,166 @@
+.class final Lcom/kwad/components/ad/feed/b/c$3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/kwad/components/core/video/a$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kwad/components/ad/feed/b/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic fc:Lcom/kwad/components/ad/feed/b/c;
+
+
+# direct methods
+.method constructor <init>(Lcom/kwad/components/ad/feed/b/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/kwad/components/ad/feed/b/c$3;->fc:Lcom/kwad/components/ad/feed/b/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(ILcom/kwad/sdk/utils/ac$a;)V
+    .locals 5
+
+    const/4 v0, 0x2
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eq p1, v1, :cond_2
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v3, 0x3
+
+    if-eq p1, v3, :cond_0
+
+    const/16 p1, 0x23
+
+    goto :goto_0
+
+    :cond_0
+    const/16 p1, 0x27
+
+    const/4 v0, 0x1
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/16 p1, 0x10
+
+    goto :goto_0
+
+    :cond_2
+    const/16 p1, 0xf
+
+    .line 1
+    :goto_0
+    iget-object v3, p0, Lcom/kwad/components/ad/feed/b/c$3;->fc:Lcom/kwad/components/ad/feed/b/c;
+
+    invoke-virtual {v3}, Lcom/kwad/components/ad/feed/b/a;->ba()V
+
+    .line 2
+    new-instance v3, Lcom/kwad/components/core/e/d/a$a;
+
+    iget-object v4, p0, Lcom/kwad/components/ad/feed/b/c$3;->fc:Lcom/kwad/components/ad/feed/b/c;
+
+    .line 3
+    invoke-virtual {v4}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Lcom/kwad/components/core/e/d/a$a;-><init>(Landroid/content/Context;)V
+
+    iget-object v4, p0, Lcom/kwad/components/ad/feed/b/c$3;->fc:Lcom/kwad/components/ad/feed/b/c;
+
+    .line 4
+    invoke-static {v4}, Lcom/kwad/components/ad/feed/b/c;->d(Lcom/kwad/components/ad/feed/b/c;)Lcom/kwad/sdk/core/response/model/AdTemplate;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lcom/kwad/components/core/e/d/a$a;->ar(Lcom/kwad/sdk/core/response/model/AdTemplate;)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v3
+
+    iget-object v4, p0, Lcom/kwad/components/ad/feed/b/c$3;->fc:Lcom/kwad/components/ad/feed/b/c;
+
+    .line 5
+    invoke-static {v4}, Lcom/kwad/components/ad/feed/b/c;->c(Lcom/kwad/components/ad/feed/b/c;)Lcom/kwad/components/core/e/d/c;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lcom/kwad/components/core/e/d/a$a;->b(Lcom/kwad/components/core/e/d/c;)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v3
+
+    .line 6
+    invoke-virtual {v3, v0}, Lcom/kwad/components/core/e/d/a$a;->an(I)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0, v2}, Lcom/kwad/components/core/e/d/a$a;->ao(Z)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0, v1}, Lcom/kwad/components/core/e/d/a$a;->aq(Z)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v0
+
+    const/4 v2, 0x5
+
+    .line 9
+    invoke-virtual {v0, v2}, Lcom/kwad/components/core/e/d/a$a;->al(I)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object v0
+
+    .line 10
+    invoke-virtual {v0, p1}, Lcom/kwad/components/core/e/d/a$a;->am(I)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1, p2}, Lcom/kwad/components/core/e/d/a$a;->d(Lcom/kwad/sdk/utils/ac$a;)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object p1
+
+    .line 12
+    invoke-virtual {p1, v1}, Lcom/kwad/components/core/e/d/a$a;->as(Z)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/kwad/components/ad/feed/b/c$3$1;
+
+    invoke-direct {p2, p0}, Lcom/kwad/components/ad/feed/b/c$3$1;-><init>(Lcom/kwad/components/ad/feed/b/c$3;)V
+
+    .line 13
+    invoke-virtual {p1, p2}, Lcom/kwad/components/core/e/d/a$a;->a(Lcom/kwad/components/core/e/d/a$b;)Lcom/kwad/components/core/e/d/a$a;
+
+    move-result-object p1
+
+    .line 14
+    invoke-static {p1}, Lcom/kwad/components/core/e/d/a;->a(Lcom/kwad/components/core/e/d/a$a;)I
+
+    return-void
+.end method

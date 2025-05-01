@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/wdp336" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/white" android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginTop="@dimen/wdp8" android:rotation="45.0" android:layout_marginStart="@dimen/wdp322" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff232a36" android:background="@drawable/shape_white_r4" android:padding="@dimen/wdp12" android:layout_width="@dimen/wdp336" android:layout_height="@dimen/wdp129" android:layout_marginTop="@dimen/wdp16" android:text="温馨提示：\n使用金手指、选关、读取存档将不能解锁成就" android:lineSpacingExtra="@dimen/wdp6" />
+</FrameLayout>

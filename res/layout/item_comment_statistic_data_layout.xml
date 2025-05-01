@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_comment_statistic_data_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/container" android:background="#fff7f7f7" android:layout_width="0.0dip" android:layout_height="@dimen/wdp49" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/wdp22" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="@dimen/wdp162" android:layout_height="wrap_content" android:paddingStart="@dimen/wdp26" />
+            <FrameLayout android:tag="binding_2" android:layout_width="@dimen/wdp176" android:layout_height="fill_parent" android:paddingStart="@dimen/wdp26">
+                <com.join.mgps.customview.MStarBar android:layout_gravity="center_vertical" android:id="@id/mStarBar" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="@dimen/wdp26" app:integerMark="false" app:layout_constraintStart_toStartOf="@id/icon" app:layout_constraintTop_toBottomOf="@id/icon" app:starDistance="@dimen/wdp2" app:starEmpty="@drawable/ic_star_red" app:starFill="@drawable/ic_star_red" app:starSize="@dimen/wdp26" />
+            </FrameLayout>
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center_vertical" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="@dimen/wdp26" android:progressDrawable="@drawable/progress_discount_comment_data" android:layout_weight="1.0" android:rotation="180.0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:tag="binding_5" android:layout_width="@dimen/wdp138" android:layout_height="wrap_content" android:paddingStart="@dimen/wdp20" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

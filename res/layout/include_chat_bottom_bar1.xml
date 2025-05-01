@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffd0d0d0" android:focusable="false" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/wdp14" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp14" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/btn_chat_extension" android:background="@drawable/post_send_extension" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp44" android:layout_marginLeft="@dimen/wdp2" android:layout_marginRight="@dimen/wdp2" />
+        <RelativeLayout android:gravity="center_vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.join.android.app.common.view.ClearEditText android:textSize="@dimen/wdp28" android:textColor="@color/black" android:textColorHint="#ff989898" android:id="@id/edit_user_comment" android:background="@drawable/forum_comment_editor_bg" android:paddingLeft="@dimen/wdp38" android:paddingTop="@dimen/wdp6" android:paddingRight="@dimen/wdp22" android:paddingBottom="@dimen/wdp6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:minHeight="@dimen/wdp72" android:hint="期待你的神评论" android:maxLines="5" android:layout_weight="1.0" android:imeOptions="flagNoExtractUi" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_comment_count" android:layout_width="wrap_content" android:layout_height="@dimen/wdp55" android:layout_marginLeft="@dimen/wdp53">
+            <ImageView android:gravity="center" android:id="@id/iv_comment_count" android:background="@drawable/ic_forum_chat" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp44" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp3" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/wdp18" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/edit_comment_count" android:background="@drawable/shape_fc494e_r_20" android:paddingLeft="@dimen/wdp7" android:paddingTop="@dimen/wdp1" android:paddingRight="@dimen/wdp7" android:paddingBottom="@dimen/wdp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp25" android:text="0" />
+        </RelativeLayout>
+        <Button android:gravity="center" android:id="@id/btn_chat_praise" android:background="@drawable/ic_forum_unlike" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp44" android:layout_marginLeft="@dimen/wdp28" />
+        <Button android:gravity="center" android:id="@id/btn_chat_star" android:background="@drawable/ic_forum_star_n" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp44" android:layout_marginLeft="@dimen/wdp55" android:layout_marginRight="@dimen/wdp37" />
+        <Button android:textSize="@dimen/wdp28" android:textColor="#ff454545" android:gravity="center" android:id="@id/btn_chat_send" android:background="@drawable/posts_send" android:visibility="gone" android:layout_width="@dimen/wdp96" android:layout_height="@dimen/wdp58" android:layout_marginLeft="@dimen/wdp20" android:layout_marginRight="@dimen/wdp10" android:text="发送" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+    <View android:background="#ffa1a1a1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_layout_more" android:background="#fff3f3f3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="200.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/chat_layout_emo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <androidx.viewpager.widget.ViewPager android:id="@id/pager_emo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:id="@id/chat_layout_extension" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_chat_add" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_layout_extension_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <it.sephiroth.android.library.widget.HListView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/matchListView" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hlv_dividerWidth="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

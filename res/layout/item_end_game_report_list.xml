@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/wdp11" android:paddingBottom="@dimen/wdp11" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivCheck" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:layout_marginTop="@dimen/wdp6" android:src="@drawable/checkbox_end_game_report" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff333333" android:id="@id/tvReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="挑战内容与视频不符" android:layout_marginStart="@dimen/wdp12" app:layout_constraintStart_toEndOf="@id/ivCheck" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivAchievement" android:layout_width="@dimen/wdp87" android:layout_height="@dimen/wdp87" android:layout_marginLeft="@dimen/wdp14" android:layout_marginRight="@dimen/wdp14" android:scaleType="fitXY" app:placeholderImage="@drawable/main_normal_icon" />
+    <TextView android:textSize="@dimen/wdp18" android:textColor="#ffc1d0dd" android:ellipsize="end" android:gravity="center" android:id="@id/tvAchievementDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/wdp100" android:text="6月6日\n10:00解锁" android:maxLines="2" />
+</LinearLayout>

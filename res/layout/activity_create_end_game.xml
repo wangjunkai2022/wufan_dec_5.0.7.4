@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96">
+        <ImageView android:id="@id/iv_back" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="残局" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/tv_customer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="客服" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp40" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:id="@id/cv_game" android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" app:cardBackgroundColor="#fffafafa" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image_game" android:layout_width="@dimen/wdp56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp18" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/wdp8" app:viewAspectRatio="1.0" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff111111" android:gravity="center_vertical" android:id="@id/tv_choose_game" android:paddingLeft="@dimen/wdp12" android:paddingRight="@dimen/wdp68" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="选择游戏" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center|right" android:id="@id/iv_arrow_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/ic_angle_down_black" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp42">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择一个本地存档作为开始挑战的画面" />
+                <ImageView android:id="@id/iv_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:src="@drawable/ic_question_blue" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:layout_width="@dimen/wdp640" android:layout_height="@dimen/wdp283" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" app:cardBackgroundColor="#fffafafa" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip">
+                <RelativeLayout android:id="@id/rl_slot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/iv_archive_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/iv_delete_slot" android:padding="@dimen/wdp3" android:layout_width="@dimen/wdp31" android:layout_height="@dimen/wdp39" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/delete" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_choose_slot" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_choose_slot" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp42" android:text="选择一个BOSS或一个关卡作为通关条件" />
+            <androidx.cardview.widget.CardView android:id="@id/cv_boss" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" app:cardBackgroundColor="#fffafafa" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_boss_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77">
+                    <TextView android:textSize="@dimen/wdp30" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/tv_boss_title" android:paddingLeft="@dimen/wdp20" android:layout_width="@dimen/wdp155" android:layout_height="fill_parent" android:text="卢布" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff777777" android:gravity="center_vertical" android:id="@id/tv_boss_sub_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="在游戏中设定一个开始挑战的场景" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ffb4abab" android:gravity="center_vertical" android:id="@id/tv_choose_boos" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp68" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="选择BOSS" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/ic_angle_down_black" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp42">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="挑战时长" />
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffadadad" android:id="@id/tv_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:text="玩家需要在xx时间内完成挑战" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/cv_time" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" android:layout_marginBottom="@dimen/wdp88" app:cardBackgroundColor="#fffafafa" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip">
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ffb4abab" android:gravity="center_vertical" android:id="@id/tv_time" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="限制在5分钟以内" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/btn_289dff_dfdfdf_r_6" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" android:layout_marginBottom="@dimen/wdp66" android:text="下一步" />
+</LinearLayout>

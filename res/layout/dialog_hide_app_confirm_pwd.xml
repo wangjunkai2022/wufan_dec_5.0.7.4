@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/wdp658" android:layout_height="@dimen/wdp438" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/wdp16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp32" android:text="您的密码是：" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/tvPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp146" android:text="123456" />
+        <View android:layout_gravity="bottom" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginBottom="@dimen/wdp110" />
+        <View android:layout_gravity="bottom|center" android:background="#fff1f1f1" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp54" android:layout_marginBottom="@dimen/wdp28" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ffff4e4e" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tvReset" android:layout_width="@dimen/wdp327" android:layout_height="@dimen/wdp110" android:text="重新设定" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff1f9eff" android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/tvConfirm" android:layout_width="@dimen/wdp327" android:layout_height="@dimen/wdp110" android:text="确定" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

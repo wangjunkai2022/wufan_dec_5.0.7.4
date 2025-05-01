@@ -1,0 +1,26 @@
+package com.kwad.framework.filedownloader.services;
+
+import android.text.TextUtils;
+import com.kwad.framework.filedownloader.f.c;
+/* loaded from: classes5.dex */
+public final class b implements c.d {
+    @Override // com.kwad.framework.filedownloader.f.c.d
+    public final int f(String str, String str2, boolean z4) {
+        return g(str, str2, z4);
+    }
+
+    @Override // com.kwad.framework.filedownloader.f.c.d
+    public final int g(String str, String str2, boolean z4) {
+        if (TextUtils.isEmpty(str)) {
+            return 0;
+        }
+        try {
+            if (z4) {
+                return com.kwad.framework.filedownloader.f.f.bx(com.kwad.framework.filedownloader.f.f.b("%sp%s@dir", str, str2)).hashCode();
+            }
+            return com.kwad.framework.filedownloader.f.f.bx(com.kwad.framework.filedownloader.f.f.b("%sp%s", str, str2)).hashCode();
+        } catch (Throwable unused) {
+            return str.hashCode();
+        }
+    }
+}

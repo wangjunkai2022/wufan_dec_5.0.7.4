@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llMain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp15" android:layout_marginTop="@dimen/wdp21" android:layout_marginRight="@dimen/wdp15" android:layout_marginBottom="@dimen/wdp21" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/wdp15" android:layout_marginVertical="@dimen/wdp21">
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff989898" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的收藏" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff2b9aff" android:gravity="center" android:id="@id/count" android:background="@drawable/shape_stroke_2b9aff_r7" android:paddingLeft="@dimen/wdp6" android:paddingRight="@dimen/wdp6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp26" android:text="0" android:includeFontPadding="false" android:layout_marginStart="@dimen/wdp8" android:paddingHorizontal="@dimen/wdp6" />
+    </LinearLayout>
+</RelativeLayout>

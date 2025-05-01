@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_comment_statistic_data_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp22" android:textColor="#fff93131" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp22" android:text="最近一周真实用户数据，每天24时自动更新" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:background="@drawable/shape_f7f7f7_r12" android:paddingTop="@dimen/wdp15" android:layout_width="0.0dip" android:layout_height="@dimen/wdp280" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp72" android:layout_marginRight="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp22" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

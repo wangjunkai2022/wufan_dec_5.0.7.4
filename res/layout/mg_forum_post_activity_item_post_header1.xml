@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_posts_top" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa9a9a9" android:gravity="bottom" android:id="@id/forum_post_add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupParent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32">
+                    <ImageView android:id="@id/locIcon" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:src="@drawable/mg_location" />
+                    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:gravity="center_vertical" android:id="@id/groupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp6" android:text="拳皇吧" android:layout_toRightOf="@id/locIcon" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/flagBestAnswer" android:visibility="gone" android:layout_width="@dimen/wdp67" android:layout_height="wrap_content" android:src="@drawable/flag_answer_resolved" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:gravity="center" android:id="@id/topMoneyTx" android:background="@drawable/post_money_bg" android:paddingLeft="@dimen/wdp6" android:paddingRight="@dimen/wdp6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp16" android:layout_marginRight="@dimen/wdp16" android:text="赏0个铜板" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/forumExtFunc" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mg_forum_post_item_padding" android:minWidth="30.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="false" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="right" android:id="@id/moreFunc" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/forum_ext_func" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/replyFunc" android:visibility="gone" android:clickable="false" android:layout_width="24.0dip" android:layout_height="22.0dip" android:src="@drawable/reply" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

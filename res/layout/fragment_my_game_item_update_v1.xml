@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ff242424" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp5" android:text="12款游戏需更新" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/imageView14" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/imageView14" android:layout_width="0.0dip" android:layout_height="@dimen/wdp32" android:layout_marginLeft="@dimen/wdp23" android:src="@drawable/ic_my_game_light" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/imageView59" android:layout_width="@dimen/wdp10" android:layout_height="@dimen/wdp16" android:layout_marginLeft="@dimen/wdp4" android:src="@drawable/ic_more_black" android:layout_marginEnd="@dimen/wdp44" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="w,13:22" app:layout_constraintLeft_toRightOf="@id/count" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

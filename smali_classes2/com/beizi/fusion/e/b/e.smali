@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/beizi/fusion/e/b/e;
+.super Ljava/lang/Object;
+.source "OppoIDInterface.java"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/beizi/fusion/e/b/e$a;
+    }
+.end annotation

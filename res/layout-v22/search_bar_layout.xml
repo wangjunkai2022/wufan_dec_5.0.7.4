@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp97"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/img_iconback" android:paddingTop="@dimen/wdp33" android:paddingBottom="@dimen/wdp33" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_introduction_back_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/lLayout_search" android:background="@drawable/search_context_bg_v2" android:layout_width="fill_parent" android:layout_height="@dimen/wdp70" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/img_iconback" android:layout_centerVertical="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/vf" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/wdp28" android:layout_marginEnd="@dimen/wdp100" />
+                <EditText android:textSize="@dimen/wdp30" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/searchEditText" android:background="@null" android:paddingLeft="@dimen/wdp28" android:paddingRight="@dimen/wdp100" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:imeOptions="actionSearch" />
+            </FrameLayout>
+            <ImageView android:id="@id/img_search" android:padding="4.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/recom_search_magin_l" android:src="@drawable/search_icon" android:layout_alignParentRight="true" />
+            <View android:id="@id/divider" android:background="#ffdddddd" android:layout_width="@dimen/wdp2" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp15" android:layout_marginBottom="@dimen/wdp15" android:layout_marginStart="@dimen/recom_search_magin_l" android:layout_toStartOf="@id/tv_search" android:layout_marginVertical="@dimen/wdp15" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_search" android:padding="4.0dip" android:layout_width="@dimen/wdp78" android:layout_height="fill_parent" android:text="搜索" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/searchClear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:src="@drawable/search_clear_edit" android:layout_toLeftOf="@id/divider" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/requestLayout" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+.class public final Lcom/kwad/sdk/core/threads/a/a;
+.super Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/kwad/sdk/core/threads/a/c;
+
+
+# static fields
+.field public static volatile aCh:Z
+
+
+# instance fields
+.field private final aCi:Ljava/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/Runnable;",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aCj:J
+
+.field private aCk:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(ILjava/util/concurrent/ThreadFactory;)V
+    .locals 0
+
+    const/4 p1, 0x1
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;-><init>(ILjava/util/concurrent/ThreadFactory;)V
+
+    .line 2
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    iput-object p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    const-wide/16 p1, 0x0
+
+    .line 3
+    iput-wide p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCj:J
+
+    const/4 p1, 0x0
+
+    .line 4
+    iput p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCk:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final GG()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/kwad/sdk/core/threads/a/a;->aCj:J
+
+    return-wide v0
+.end method
+
+.method protected final beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
+    .locals 6
+
+    .line 1
+    invoke-super {p0, p1, p2}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
+
+    .line 2
+    sget-boolean p1, Lcom/kwad/sdk/core/threads/a/a;->aCh:Z
+
+    if-eqz p1, :cond_1
+
+    iget-object p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    iget-object p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    .line 3
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    iget-object p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Long;
+
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    const-wide/16 v2, 0x0
+
+    cmp-long p1, v0, v2
+
+    if-ltz p1, :cond_0
+
+    const-wide/32 v2, 0x1b7740
+
+    cmp-long p1, v0, v2
+
+    if-gez p1, :cond_0
+
+    .line 4
+    iget-wide v2, p0, Lcom/kwad/sdk/core/threads/a/a;->aCj:J
+
+    iget p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCk:I
+
+    int-to-long v4, p1
+
+    mul-long v2, v2, v4
+
+    add-long/2addr v2, v0
+
+    add-int/lit8 v0, p1, 0x1
+
+    int-to-long v0, v0
+
+    div-long/2addr v2, v0
+
+    iput-wide v2, p0, Lcom/kwad/sdk/core/threads/a/a;->aCj:J
+
+    add-int/lit8 p1, p1, 0x1
+
+    .line 5
+    iput p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCk:I
+
+    .line 6
+    :cond_0
+    iget-object p1, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_1
+    return-void
+.end method
+
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 3
+
+    .line 1
+    sget-boolean v0, Lcom/kwad/sdk/core/threads/a/a;->aCh:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lcom/kwad/sdk/core/threads/a/a;->aCi:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-virtual {v0, p1, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    :cond_0
+    invoke-super {p0, p1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
+
+    return-void
+.end method

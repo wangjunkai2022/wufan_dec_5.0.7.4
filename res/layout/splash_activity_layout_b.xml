@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRootView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingBottom="@dimen/wdp220" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/viewImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:actualImageScaleType="centerCrop" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffa37002" android:id="@id/textViewVersion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:layout_marginBottom="44.0dip" android:text="V1.2beta" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.join.android.app.component.video.EmptyControlVideoView android:id="@id/video_player" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rl_opts_bottom" android:background="@drawable/shape_linear_000_a60" android:layout_width="fill_parent" android:layout_height="@dimen/wdp412" android:layout_above="@id/bottomImag">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_hand_shake" android:background="@drawable/shape_2b2b2b_r_59" android:visibility="gone" android:layout_width="@dimen/wdp620" android:layout_height="@dimen/wdp118" android:layout_marginBottom="@dimen/wdp44" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_hand_shake" android:layout_width="wrap_content" android:layout_height="@dimen/wdp78" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/ic_hand_shake_black" />
+            <TextView android:textSize="@dimen/wdp36" android:textColor="#ffffffff" android:id="@id/tv_hand_shake_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="摇动或点击开启游戏" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_hand_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp44" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:layout_width="@dimen/wdp78" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_hand_up" android:layout_width="@dimen/wdp78" android:layout_height="@dimen/wdp166" android:src="@drawable/ic_slide_up_white" />
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/wdp16" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp36" android:textColor="#ffffffff" android:id="@id/tv_hand_up_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上滑体验" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomImag" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wdp218" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/imageView24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wufun_splash_bottom_b" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:textSize="@dimen/wdp22" android:textColor="#ffcfcfcf" android:gravity="center" android:id="@id/countdownLayout" android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/wdp28" android:layout_marginBottom="@dimen/wdp40" android:text="跳过" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffffffff" android:gravity="center" android:id="@id/countdown" android:background="@drawable/splash_jump_back_r29_a59" android:paddingLeft="@dimen/wdp28" android:paddingRight="@dimen/wdp28" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/wdp58" android:text="跳过 3" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/countdownVideo" android:background="@drawable/splash_jump_back_video" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp12" android:paddingRight="@dimen/wdp30" android:paddingBottom="@dimen/wdp12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/ic_forum_comment_more" android:padding="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_padding" android:layout_width="wrap_content" android:layout_height="@dimen/wdp89"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/resolve" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="采纳" />
+    <View android:id="@id/v_resolve" android:background="#ffefeff0" android:layout_width="1.0dip" android:layout_height="@dimen/wdp32" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/report" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" />
+    <View android:id="@id/v_report" android:background="#ffefeff0" android:layout_width="1.0dip" android:layout_height="@dimen/wdp32" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/delete" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" />
+    <View android:id="@id/v_delete" android:background="#ffefeff0" android:layout_width="1.0dip" android:layout_height="@dimen/wdp32" />
+    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/reply" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp12" android:text="回复" />
+</LinearLayout>

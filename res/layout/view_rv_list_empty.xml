@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_no_data" android:background="@drawable/papa_loading_null" android:layout_width="@dimen/wdp140" android:layout_height="@dimen/wdp174" android:layout_marginTop="@dimen/wdp180" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff8a8a8a" android:id="@id/tv_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36" android:layout_marginBottom="@dimen/wdp180" android:text="快来评论抢沙发吧~" android:layout_below="@id/iv_no_data" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/shape_212832_r8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp121"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="247.0">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc1d0dd" android:id="@id/tvTotalPlayTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp11" android:text="暂无数据" app:layout_constraintBottom_toTopOf="@id/tvTitle1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffb3b4b6" android:id="@id/tvTitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游戏时长" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTotalPlayTime" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_gravity="center_vertical" android:background="#ff354053" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp48" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="266.0">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc1d0dd" android:id="@id/tvLastPlayTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp11" android:text="暂无数据" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffb3b4b6" android:id="@id/tvTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最后运行日期" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#ff354053" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp48" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="249.0">
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ffb3b4b6" android:id="@id/tvTitle3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请玩家一起玩" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvOnlinePlayerCount" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc1d0dd" android:id="@id/tvOnlinePlayerCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人" app:layout_constraintBottom_toTopOf="@id/tvTitle3" app:layout_constraintStart_toStartOf="@id/tvTitle3" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:gravity="center" android:id="@id/tvBattle" android:background="@drawable/btn_simulator_launch_battle" android:layout_width="@dimen/wdp44" android:layout_height="@dimen/wdp38" android:text="邀" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

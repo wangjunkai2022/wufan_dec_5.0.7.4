@@ -1,0 +1,12 @@
+package com.aggmoread.sdk.z.c.a.a.c.r;
+
+import com.aggmoread.sdk.z.c.a.a.c.e;
+import java.util.Map;
+/* loaded from: classes2.dex */
+public interface d extends e {
+    void onAdShow();
+
+    void onReward(Map map);
+
+    void onVideoComplete();
+}

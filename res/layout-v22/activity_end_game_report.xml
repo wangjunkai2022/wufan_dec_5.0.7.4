@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/outside" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llMain" android:background="@drawable/shape_item_top_radius" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/wdp30">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff424242" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/wdp89" android:text="举报" android:fontFamily="sans-serif-condensed-medium" />
+        <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24" android:text="举报类型" android:fontFamily="sans-serif-condensed-medium" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvReportType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp9" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="举报描述" android:fontFamily="sans-serif-condensed-medium" />
+        <EditText android:textSize="@dimen/wdp28" android:textColor="@color/black" android:textColorHint="#ffbcbcbc" android:gravity="start|center|top" android:id="@id/etDesc" android:background="@drawable/shape_bg_et_gray" android:padding="@dimen/wdp25" android:layout_width="fill_parent" android:layout_height="@dimen/wdp263" android:layout_marginTop="@dimen/wdp20" android:hint="详细描述你遇到的问题，可以帮助举报被更快处理" android:maxLength="100" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="@color/white" android:gravity="center" android:id="@id/btnSubmit" android:background="@drawable/shape_btn_report_end_game" android:layout_width="fill_parent" android:layout_height="@dimen/wdp76" android:layout_marginTop="@dimen/wdp36" android:layout_marginBottom="@dimen/wdp21" android:text="提交" />
+    </LinearLayout>
+</LinearLayout>

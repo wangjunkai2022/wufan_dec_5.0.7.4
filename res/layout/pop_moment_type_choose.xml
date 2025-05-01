@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/wdp136" android:layout_height="@dimen/wdp155"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/white" android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginTop="@dimen/wdp8" android:rotation="45.0" android:layout_marginStart="@dimen/wdp122" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_r4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp16">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff4197f8" android:gravity="center" android:id="@id/tvSelf" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="仅自己" android:layout_weight="1.0" />
+        <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp28" android:layout_marginRight="@dimen/wdp28" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff232a36" android:gravity="center" android:id="@id/tvAll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="全部玩家" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

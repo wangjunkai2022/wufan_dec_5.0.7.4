@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/wdp3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/rcy_recommed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="@dimen/wdp12" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/noarchive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp14" android:layout_marginTop="@dimen/wdp5">
+            <TextView android:textSize="@dimen/wdp30" android:textStyle="bold" android:textColor="#ffb9c2cc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无存档!" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ff697074" android:id="@id/tv_show_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请先从本地备份" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</LinearLayout>

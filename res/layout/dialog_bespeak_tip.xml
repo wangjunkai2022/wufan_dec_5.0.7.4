@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="@dimen/wdp554" android:layout_height="@dimen/wdp447" app:cardBackgroundColor="#ffffffff" app:cardCornerRadius="@dimen/wdp26" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff202020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32" android:text="预约成功" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff202020" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp38" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp38" android:text="游戏上线时，我们会在第一时间通过微信小助手通知您～" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/wdp6" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp32" android:layout_marginRight="@dimen/wdp32" android:layout_marginBottom="@dimen/wdp42">
+            <ImageView android:layout_width="@dimen/wdp36" android:layout_height="@dimen/wdp36" android:src="@drawable/ic_bespeak" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff8f8f8f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:text="未添加官方微信小助手，则无法收到通知" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_known" android:background="@drawable/shape_3ca4fd_r_44" android:layout_width="@dimen/wdp396" android:layout_height="@dimen/wdp78" android:layout_marginBottom="@dimen/wdp52" android:text="知道了" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/ic_back_close_grey" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,26 @@
+package io.reactivex.internal.subscribers;
+/* compiled from: QueueDrainSubscriber.java */
+/* loaded from: classes6.dex */
+class QueueDrainSubscriberPad0 {
+
+    /* renamed from: p1  reason: collision with root package name */
+    volatile long f69303p1;
+    volatile long p10;
+    volatile long p11;
+    volatile long p12;
+    volatile long p13;
+    volatile long p14;
+    volatile long p15;
+
+    /* renamed from: p2  reason: collision with root package name */
+    volatile long f69304p2;
+
+    /* renamed from: p3  reason: collision with root package name */
+    volatile long f69305p3;
+    volatile long p4;
+    volatile long p5;
+    volatile long p6;
+    volatile long p7;
+    volatile long p8;
+    volatile long p9;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom|center" android:background="@drawable/bg_pd_default" android:layout_width="@dimen/wdp720" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_content" android:paddingBottom="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/v_close1" android:background="@drawable/shape_cdcdcd_r_10" android:layout_width="@dimen/wdp64" android:layout_height="@dimen/wdp10" android:layout_marginTop="@dimen/wdp6" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp80" android:layout_marginTop="@dimen/wdp42" android:layout_marginRight="@dimen/wdp80" android:text="使用微信‘‘扫一扫’’，扫描下方二维码即可领取悟饭专属客服，第一时间获取游戏资讯和福利哦～" android:singleLine="false" />
+        <RelativeLayout android:id="@id/rl_container" android:background="@drawable/ic_private_domain_qr_mask" android:padding="@dimen/wdp26" android:layout_width="@dimen/wdp396" android:layout_height="@dimen/wdp396" android:layout_marginTop="@dimen/wdp32">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="@dimen/wdp370" android:layout_height="@dimen/wdp370" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="1.0" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_save_qr" android:background="@drawable/shape_3ca4fd_r_44" android:layout_width="@dimen/wdp562" android:layout_height="@dimen/wdp78" android:layout_marginTop="@dimen/wdp60" android:text="保存图片" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="打开微信‘‘扫一扫’’领取专属客服" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp32" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/ic_back_close_grey" android:layout_alignParentRight="true" />
+</RelativeLayout>

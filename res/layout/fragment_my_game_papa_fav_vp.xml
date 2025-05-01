@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.mgps.customview.NestedScrollableHost android:id="@id/nsTags" android:layout_width="0.0dip" android:layout_height="@dimen/wdp97" android:paddingStart="@dimen/wdp24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvTags" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.join.mgps.customview.NestedScrollableHost>
+    <com.join.mgps.customview.NestedScrollableHost android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nsTags">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.join.mgps.customview.NestedScrollableHost>
+</androidx.constraintlayout.widget.ConstraintLayout>

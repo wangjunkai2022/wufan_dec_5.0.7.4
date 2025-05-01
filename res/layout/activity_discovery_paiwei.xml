@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statubar" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="@dimen/wdp1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:id="@id/headview" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/statubar">
+        <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" />
+        <TextView android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="@dimen/wdp97" android:text="排位赛" android:singleLine="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed-medium" style="@style/TextViewStyle_18sp" />
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vpRank" android:layout_width="0.0dip" android:layout_height="0.0sp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/headview" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvGame" android:layout_width="0.0dip" android:layout_height="@dimen/wdp120" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp180" android:paddingStart="@dimen/wdp20" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.Group android:id="@id/main" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="btnStart,rvGame,vpRank" />
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</androidx.constraintlayout.widget.ConstraintLayout>

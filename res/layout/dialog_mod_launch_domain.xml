@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#8c000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="@dimen/wdp490" android:layout_height="@dimen/wdp602" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivPic" android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff8b8b8b" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btnNegative" android:layout_width="@dimen/wdp330" android:layout_height="@dimen/wdp66" android:layout_marginLeft="@dimen/wdp80" android:layout_marginRight="@dimen/wdp80" android:layout_marginBottom="@dimen/wdp6" android:text="暂时不了" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btnPositive" android:background="@drawable/shape_3ba4ff_r4" android:layout_width="@dimen/wdp330" android:layout_height="@dimen/wdp68" android:layout_marginLeft="@dimen/wdp80" android:layout_marginRight="@dimen/wdp80" android:layout_marginBottom="@dimen/wdp72" android:text="领取攻略" />
+        <com.facebook.drawee.view.SimpleDraweeView android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/imgPositive" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wdp68" android:layout_marginBottom="@dimen/wdp72" android:adjustViewBounds="true" android:text="领取攻略" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

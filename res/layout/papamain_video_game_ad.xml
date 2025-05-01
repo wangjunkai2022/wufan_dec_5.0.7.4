@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:id="@id/tvGameName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp5" android:text="" android:maxLines="2" android:layout_marginEnd="@dimen/wdp24" app:layout_constraintEnd_toStartOf="@id/flBtn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/flBtn" android:background="@drawable/btn_download_3ca4fd_stroke_1px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/tvBtn" android:paddingLeft="@dimen/wdp8" android:paddingRight="@dimen/wdp8" android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:minWidth="@dimen/wdp94" android:text="查看" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="flBtn,tvGameName" />
+    <androidx.cardview.widget.CardView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/wdp22" app:cardCornerRadius="@dimen/wdp16" app:cardElevation="0.0dip" app:layout_constraintDimensionRatio="680:376" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/barrier">
+        <com.join.android.app.component.video.MultiStandVideo android:id="@id/wf_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

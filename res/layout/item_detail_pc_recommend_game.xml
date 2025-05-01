@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp31" android:textStyle="bold" android:textColor="#ff282828" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp26" android:layout_marginTop="@dimen/wdp35" android:text="端游推荐" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp26" android:layout_marginBottom="@dimen/wdp10" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="2" />
+</LinearLayout>

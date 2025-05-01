@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="@dimen/wdp360" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/wdp260" android:layout_height="@dimen/wdp360">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="@dimen/wdp4" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_linera_000_0_68" android:paddingLeft="@dimen/wdp16" android:paddingRight="@dimen/wdp16" android:paddingBottom="@dimen/wdp14" android:layout_width="fill_parent" android:layout_height="@dimen/wdp98" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="bottom" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_gravity="bottom" android:id="@id/rLayoutRight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff000000" android:gravity="center" android:id="@id/mgListviewItemInstall" android:background="@drawable/bg_ffeed9_solid_r4" android:layout_width="@dimen/wdp66" android:layout_height="@dimen/wdp36" android:text="打开" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:visibility="gone" android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp26" android:indeterminateDrawable="@drawable/loding_progress_blue" android:indeterminateDuration="1000" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

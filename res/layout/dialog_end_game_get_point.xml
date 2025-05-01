@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bg" android:layout_width="@dimen/wdp467" android:layout_height="@dimen/wdp432" android:src="@drawable/bg_dialog_get_point" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/ivClose" android:layout_width="@dimen/wdp79" android:layout_height="@dimen/wdp54" android:layout_marginTop="-4.0dip" android:src="@drawable/ic_dialog_close_end_game" android:layout_marginEnd="-4.0dip" app:layout_constraintEnd_toEndOf="@id/bg" app:layout_constraintTop_toTopOf="@id/bg" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/wdp50" android:layout_marginTop="@dimen/wdp19" android:src="@drawable/text_get_point" android:adjustViewBounds="true" app:layout_constraintEnd_toEndOf="@id/bg" app:layout_constraintStart_toStartOf="@id/bg" app:layout_constraintTop_toTopOf="@id/bg" />
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/icPoint" android:layout_width="@dimen/wdp93" android:layout_height="@dimen/wdp118" android:layout_marginTop="@dimen/wdp114" android:src="@drawable/ic_chance_point" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="@id/bg" app:layout_constraintStart_toStartOf="@id/bg" app:layout_constraintTop_toTopOf="@id/bg" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/ivBtn" app:layout_constraintEnd_toEndOf="@id/bg" app:layout_constraintStart_toStartOf="@id/bg" app:layout_constraintTop_toBottomOf="@id/icPoint">
+        <ImageView android:id="@id/textEndless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdp40" android:src="@drawable/text_endless_point" android:adjustViewBounds="true" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icMulti" android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp29" android:layout_marginTop="@dimen/wdp5" android:src="@drawable/ic_multi" />
+            <com.papa91.arc.widget.StrokeTextView android:textSize="@dimen/wdp65" android:textColor="@color/white" android:id="@id/tvPointCount" android:paddingLeft="@dimen/wdp3" android:paddingRight="@dimen/wdp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_marginStart="@dimen/wdp13" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/ivBtn" android:layout_width="@dimen/wdp191" android:layout_height="@dimen/wdp80" android:layout_marginBottom="@dimen/wdp29" android:src="@drawable/btn_end_game" app:layout_constraintBottom_toBottomOf="@id/bg" app:layout_constraintEnd_toEndOf="@id/bg" app:layout_constraintStart_toStartOf="@id/bg" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/ivBtn" app:layout_constraintEnd_toEndOf="@id/ivBtn" app:layout_constraintStart_toStartOf="@id/ivBtn" app:layout_constraintTop_toTopOf="@id/ivBtn">
+        <ImageView android:id="@id/icVideoAd" android:layout_width="@dimen/wdp47" android:layout_height="@dimen/wdp38" android:src="@drawable/ic_video_ad" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/wdp12" />
+        <ImageView android:id="@id/textReceive" android:layout_width="@dimen/wdp80" android:layout_height="@dimen/wdp46" android:src="@drawable/text_receive" android:adjustViewBounds="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

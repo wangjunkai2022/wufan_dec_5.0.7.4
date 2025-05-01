@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_source_share_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back_image" android:tag="binding_1" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/TextViewStyle_16sp" />
+        <ImageView android:id="@id/iv_share" android:tag="binding_3" android:paddingTop="@dimen/wdp18" android:paddingBottom="@dimen/wdp18" android:visibility="visible" android:layout_width="@dimen/wdp96" android:layout_height="@dimen/wdp96" android:src="@drawable/ic_share_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbarLayout" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="@dimen/wdp342" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/wdp330" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp12" android:layout_marginRight="@dimen/wdp20" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip">
+                    <com.youth.banner.Banner android:id="@id/banner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:image_scale_type="fit_xy" app:indicator_drawable_selected="@drawable/indicator_source_share_selected" app:indicator_drawable_unselected="@drawable/indicator_source_share_default" app:indicator_height="@dimen/wdp12" app:indicator_margin="@dimen/wdp8" app:indicator_width="@dimen/wdp12" app:is_auto_play="true" />
+                </androidx.cardview.widget.CardView>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp38" android:layout_marginRight="@dimen/wdp20" app:layout_scrollFlags="scroll|snap">
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/lLayout_search" android:background="@drawable/shape_source_share_search" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/iv_search" android:layout_width="@dimen/wdp32" android:layout_height="@dimen/wdp32" android:layout_marginLeft="@dimen/wdp32" android:src="@drawable/ic_source_share_search_black" android:layout_centerVertical="true" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp160" android:layout_toRightOf="@id/iv_search">
+                        <EditText android:textSize="@dimen/wdp30" android:textColor="#ffa8a8a8" android:textColorHint="#ffa8a8a8" android:id="@id/searchEditText" android:tag="binding_5" android:background="@null" android:paddingLeft="@dimen/wdp28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入搜索关键词" android:singleLine="true" android:imeOptions="actionSearch" />
+                    </FrameLayout>
+                    <View android:id="@id/divider" android:background="#ffdcdcdc" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp20" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_search" />
+                    <TextView android:textSize="@dimen/wdp28" android:textColor="#ff3eadff" android:gravity="center" android:id="@id/tv_search" android:tag="binding_6" android:padding="4.0dip" android:layout_width="@dimen/wdp78" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:text="搜索" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/searchClear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:src="@drawable/search_clear_edit" android:layout_toLeftOf="@id/divider" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp86" android:layout_marginTop="@dimen/wdp3" app:tabIndicatorColor="@color/black_alpha" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="@dimen/wdp30" app:tabMode="scrollable" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/black" app:tabTextColor="@color/black" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

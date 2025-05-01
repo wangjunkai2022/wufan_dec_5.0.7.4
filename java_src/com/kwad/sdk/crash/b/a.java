@@ -1,0 +1,140 @@
+package com.kwad.sdk.crash.b;
+
+import android.text.TextUtils;
+import androidx.annotation.NonNull;
+import com.kwad.library.solder.lib.i;
+import com.kwad.sdk.core.e.c;
+import com.kwad.sdk.crash.e;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+/* loaded from: classes5.dex */
+public final class a {
+    private static Set<String> aHf;
+
+    static {
+        HashSet hashSet = new HashSet();
+        aHf = hashSet;
+        hashSet.add("commonHT");
+        aHf.add("reportHT");
+        aHf.add("IpDirectHelper");
+        aHf.add("filedownloader serial thread");
+        aHf.add("RemitHandoverToDB");
+        aHf.add("source-status-callback");
+        aHf.add("ObiwanMMAPTracer");
+        aHf.add("FrameSequence decoding thread");
+    }
+
+    private static boolean F(@NonNull List<StackTraceElement[]> list) {
+        for (StackTraceElement[] stackTraceElementArr : list) {
+            if (a(stackTraceElementArr)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean a(StackTraceElement[] stackTraceElementArr) {
+        if (stackTraceElementArr == null || stackTraceElementArr.length == 0) {
+            return false;
+        }
+        String[] Ig = e.If().Ig();
+        if (Ig == null || Ig.length == 0) {
+            return true;
+        }
+        boolean z4 = false;
+        for (String str : Ig) {
+            z4 = a(stackTraceElementArr, str);
+            if (z4) {
+                break;
+            }
+        }
+        if (z4) {
+            for (String str2 : e.If().Ih()) {
+                if (b(stackTraceElementArr, str2)) {
+                    return false;
+                }
+            }
+        }
+        return z4;
+    }
+
+    private static boolean b(StackTraceElement[] stackTraceElementArr, String str) {
+        for (StackTraceElement stackTraceElement : stackTraceElementArr) {
+            String className = stackTraceElement.getClassName();
+            if (!TextUtils.isEmpty(className) && className.contains(str)) {
+                c.d("AdExceptionCollector", "CrashFilter excludeTags element className=" + className + " exclude tag=" + str);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean fA(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return false;
+        }
+        return str.startsWith("ksad-") || str.startsWith("filedownloader serial thread");
+    }
+
+    public static boolean fB(String str) {
+        if (fA(str) || i.bL(str)) {
+            return true;
+        }
+        Set<String> set = aHf;
+        if (set == null || !set.contains(str)) {
+            return false;
+        }
+        c.d("CrashFilter", "needReportByThreadName:" + str);
+        return true;
+    }
+
+    public static boolean fC(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return false;
+        }
+        String[] Ig = e.If().Ig();
+        if (Ig == null || Ig.length == 0) {
+            return true;
+        }
+        boolean z4 = false;
+        for (String str2 : Ig) {
+            z4 = str.contains(str2);
+            if (z4) {
+                break;
+            }
+        }
+        if (z4) {
+            for (String str3 : e.If().Ih()) {
+                if (str.contains(str3)) {
+                    return false;
+                }
+            }
+        }
+        return z4;
+    }
+
+    public static boolean o(@NonNull Throwable th) {
+        ArrayList arrayList = new ArrayList(5);
+        for (int i4 = 0; i4 < 5; i4++) {
+            arrayList.add(th.getStackTrace());
+            th = th.getCause();
+            if (th == null) {
+                break;
+            }
+        }
+        return F(arrayList);
+    }
+
+    private static boolean a(@NonNull StackTraceElement[] stackTraceElementArr, String str) {
+        for (StackTraceElement stackTraceElement : stackTraceElementArr) {
+            String className = stackTraceElement.getClassName();
+            if (!TextUtils.isEmpty(className) && className.contains(str)) {
+                c.d("AdExceptionCollector", "CrashFilter filterTags element className=" + className + " filter tag=" + str);
+                return true;
+            }
+        }
+        return false;
+    }
+}

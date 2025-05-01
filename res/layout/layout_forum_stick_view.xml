@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/wdp88"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff262628" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp30" android:text="全部评论" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_view_poster" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:src="@drawable/ic_forum_detail_check_n" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/view_poster" android:paddingLeft="@dimen/wdp10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="只看作者" />
+    <View android:background="#ffededed" android:layout_width="@dimen/wdp1" android:layout_height="@dimen/wdp18" android:layout_marginLeft="@dimen/wdp18" android:layout_marginRight="@dimen/wdp18" />
+    <ImageView android:id="@id/iv_sort" android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginRight="@dimen/wdp8" android:src="@drawable/ic_forum_sort" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:gravity="center_vertical" android:id="@id/tv_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp20" android:text="最早" />
+</LinearLayout>

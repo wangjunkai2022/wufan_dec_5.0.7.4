@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/wdp136" android:layout_height="@dimen/wdp85"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/white" android:layout_width="@dimen/wdp24" android:layout_height="@dimen/wdp24" android:layout_marginTop="@dimen/wdp8" android:rotation="45.0" android:layout_marginStart="@dimen/wdp122" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_r4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp16">
+        <TextView android:textSize="@dimen/wdp26" android:textColor="@color/colorTextBlack" android:gravity="center" android:id="@id/tvReport" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="举报" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

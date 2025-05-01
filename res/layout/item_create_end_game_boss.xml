@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp74">
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/tv_title" android:paddingLeft="@dimen/wdp20" android:layout_width="@dimen/wdp155" android:layout_height="fill_parent" android:text="卢布" android:singleLine="true" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff777777" android:gravity="center_vertical" android:id="@id/tv_sub_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="在游戏中设定一个开始挑战的场景" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

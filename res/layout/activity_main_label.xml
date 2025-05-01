@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/activity_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_title" android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <View android:id="@id/line" android:layout_alignParentBottom="true" style="@style/TextViewStyle_line_H" />
+                <ImageView android:id="@id/back_image" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/posting_back" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_label_name_head" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="\#拳皇吧" android:layout_toRightOf="@id/back_image" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_label_property" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/back_image">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_label_administrator_avatar" android:layout_width="@dimen/wdp42" android:layout_height="@dimen/wdp42" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff3b3b3b" android:id="@id/tv_label_administrator_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp16" android:text="编" />
+                    <View android:background="@drawable/bg_circle_a8a8a8" android:layout_width="@dimen/wdp3" android:layout_height="@dimen/wdp3" android:layout_marginLeft="@dimen/wdp2" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffa8a8a8" android:id="@id/tv_posts_counts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp3" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnFocus" android:background="@drawable/posting_publish_selected" android:visibility="gone" android:layout_width="@dimen/wdp94" android:layout_height="@dimen/wdp44" android:layout_marginRight="@dimen/wdp30" android:text="关注" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:state_selected="true" android:id="@id/tv_alreadyJoin" android:background="@drawable/mg_f_follow_selector" android:paddingLeft="13.0dip" android:paddingTop="3.0dip" android:paddingRight="13.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="已关注" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ru.noties.scrollable.ScrollableLayout android:id="@id/scrollableLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title">
+                <com.join.mgps.customview.MainLabelHeaderView android:gravity="center" android:orientation="vertical" android:id="@id/mScrollableHeader" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_multi_type_posts" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/wdp92">
+                    <com.join.mgps.customview.SlidingTabLayout6 android:id="@id/tabsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp72" android:layout_marginRight="@dimen/wdp84" android:layout_centerVertical="true" app:pstsDividerPadding="@dimen/wdp6" app:pstsIndicatorColor="#ffff8554" app:pstsIndicatorHeight="@dimen/wdp6" app:pstsTabPaddingLeftRight="@dimen/wdp25" app:stabTextSelectedColor="@color/black" app:stextColor="#ff333333" app:stextSelectedSize="@dimen/wdp36" app:stextSize="@dimen/wdp28" />
+                    <RelativeLayout android:id="@id/rlOrderBy" android:clickable="true" android:layout_width="@dimen/wdp84" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@id/iv_order" android:background="@drawable/ic_forum_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+                <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </ru.noties.scrollable.ScrollableLayout>
+            <Button android:id="@id/btnSendPosts" android:background="@drawable/ic_yellow_add" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <include layout="@layout/loding_layout_include" />
+        <include layout="@layout/failed_layout_include" />
+    </FrameLayout>
+</RelativeLayout>

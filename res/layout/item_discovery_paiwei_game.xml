@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/wdp10" android:paddingRight="@dimen/wdp10" android:layout_width="@dimen/wdp140" android:layout_height="@dimen/wdp120"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iconGameBig" android:visibility="gone" android:layout_width="@dimen/wdp120" android:layout_height="@dimen/wdp120" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/wdp26" />
+    <androidx.cardview.widget.CardView android:id="@id/flIconGameSmall" android:layout_width="@dimen/wdp103" android:layout_height="@dimen/wdp103" app:cardCornerRadius="@dimen/wdp26" app:cardElevation="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iconGameSmall" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/wdp26" />
+        <View android:background="#80b5b5b5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

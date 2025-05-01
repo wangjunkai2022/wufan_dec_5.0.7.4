@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/beizi_dislike_item_multi_two_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="我的标题" android:layout_marginStart="20.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/beizi_dislike_item_multi_two_recycleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="2.0dip" android:layout_marginEnd="20.0dip" />
+</LinearLayout>

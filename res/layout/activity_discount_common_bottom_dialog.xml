@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_content" android:tag="layout/activity_discount_common_bottom_dialog_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cl_container" android:background="@drawable/shape_discount_ffffff_r36_top" android:paddingBottom="@dimen/wdp40" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff202020" android:id="@id/tvTitle" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp36" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff000000" android:id="@id/tvContent" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp36" android:layout_marginRight="@dimen/wdp40" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:gravity="center" android:id="@id/btnConfirm" android:tag="binding_3" android:background="@drawable/discount_shape_gradient_gift_receive_btn" android:layout_width="@dimen/wdp416" android:layout_height="@dimen/wdp80" android:layout_marginTop="@dimen/wdp117" />
+        <TextView android:textSize="@dimen/wdp30" android:textColor="#ff949494" android:gravity="center" android:tag="binding_4" android:layout_width="@dimen/wdp416" android:layout_height="@dimen/wdp80" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

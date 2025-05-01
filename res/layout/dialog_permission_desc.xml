@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="@dimen/wdp680" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp10" android:layout_marginTop="@dimen/wdp10" android:layout_marginRight="@dimen/wdp10" android:layout_marginBottom="@dimen/wdp10" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/wdp26" app:cardElevation="@dimen/wdp10" app:contentPaddingBottom="@dimen/wdp24" app:contentPaddingLeft="@dimen/wdp32" app:contentPaddingRight="@dimen/wdp32" app:contentPaddingTop="@dimen/wdp28">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff202020" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备信息使用说明" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ff4b4b4b" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp48" android:text="保障软件使用安全顺畅；协助识别用户，更好的解决用户问题。" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

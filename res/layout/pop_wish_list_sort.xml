@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_fff_b_r_5" android:layout_width="@dimen/wdp131" android:layout_height="@dimen/wdp221"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rgSort" android:layout_width="@dimen/wdp131" android:layout_height="@dimen/wdp221" android:layout_centerInParent="true">
+        <Button android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/btn_sxz" android:background="@color/transparent" android:paddingLeft="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="@dimen/wdp72" android:text="实现中" android:singleLine="true" />
+        <View android:layout_gravity="center_horizontal" android:background="#ffefeff0" android:layout_width="@dimen/wdp72" android:layout_height="@dimen/wdp1" />
+        <Button android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/btn_ysx" android:background="@color/transparent" android:paddingLeft="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="@dimen/wdp72" android:text="已实现" android:singleLine="true" />
+        <View android:layout_gravity="center_horizontal" android:background="#ffefeff0" android:layout_width="@dimen/wdp72" android:layout_height="@dimen/wdp1" />
+        <Button android:textSize="@dimen/wdp26" android:textColor="#ff161616" android:gravity="center" android:id="@id/btn_all" android:background="@color/transparent" android:paddingLeft="@dimen/wdp16" android:layout_width="wrap_content" android:layout_height="@dimen/wdp72" android:text="全部" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

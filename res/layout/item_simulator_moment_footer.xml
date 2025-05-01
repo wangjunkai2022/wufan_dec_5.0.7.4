@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/wdp20" android:textColor="#ff4b8fff" android:gravity="center" android:id="@id/tvFooter" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:text="查看全部"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

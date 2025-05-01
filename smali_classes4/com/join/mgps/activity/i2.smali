@@ -1,0 +1,33 @@
+.class public final synthetic Lcom/join/mgps/activity/i2;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic b:Lcom/join/mgps/business/CollectionBeanSubBusiness;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/join/mgps/business/CollectionBeanSubBusiness;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/join/mgps/activity/i2;->b:Lcom/join/mgps/business/CollectionBeanSubBusiness;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/join/mgps/activity/i2;->b:Lcom/join/mgps/business/CollectionBeanSubBusiness;
+
+    invoke-static {v0, p1}, Lcom/join/mgps/activity/MyGamePapaFragmentV2$k;->a(Lcom/join/mgps/business/CollectionBeanSubBusiness;Landroid/view/View;)V
+
+    return-void
+.end method

@@ -1,0 +1,245 @@
+.class public Lcom/kwad/components/core/widget/KSCornerButton;
+.super Landroid/widget/Button;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "AppCompatCustomView"
+    }
+.end annotation
+
+
+# instance fields
+.field private mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0, p1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, v0}, Lcom/kwad/components/core/widget/KSCornerButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 0
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 3
+    invoke-direct {p0, p1, p2}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Lcom/kwad/components/core/widget/KSCornerButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 5
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 6
+    invoke-direct {p0, p1, p2}, Lcom/kwad/components/core/widget/KSCornerButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .locals 0
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RequiresApi;
+        api = 0x15
+    .end annotation
+
+    .line 7
+    invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/Button;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 8
+    invoke-direct {p0, p1, p2}, Lcom/kwad/components/core/widget/KSCornerButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method private a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 4
+    .param p2    # Landroid/util/AttributeSet;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    new-instance v0, Lcom/kwad/sdk/widget/h$a;
+
+    invoke-direct {v0}, Lcom/kwad/sdk/widget/h$a;-><init>()V
+
+    .line 2
+    sget-object v1, Lcom/kwad/sdk/R$styleable;->ksad_KSCornerImageView:[I
+
+    .line 3
+    invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object v1
+
+    .line 4
+    sget v2, Lcom/kwad/sdk/R$styleable;->ksad_KSCornerImageView_ksad_leftTopCorner:I
+
+    const/4 v3, 0x1
+
+    .line 5
+    invoke-virtual {v1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Lcom/kwad/sdk/widget/h$a;->cf(Z)Lcom/kwad/sdk/widget/h$a;
+
+    .line 6
+    sget v2, Lcom/kwad/sdk/R$styleable;->ksad_KSCornerImageView_ksad_topRightCorner:I
+
+    .line 7
+    invoke-virtual {v1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Lcom/kwad/sdk/widget/h$a;->cg(Z)Lcom/kwad/sdk/widget/h$a;
+
+    .line 8
+    sget v2, Lcom/kwad/sdk/R$styleable;->ksad_KSCornerImageView_ksad_rightBottomCorner:I
+
+    .line 9
+    invoke-virtual {v1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v2
+
+    .line 10
+    invoke-virtual {v0, v2}, Lcom/kwad/sdk/widget/h$a;->ch(Z)Lcom/kwad/sdk/widget/h$a;
+
+    .line 11
+    sget v2, Lcom/kwad/sdk/R$styleable;->ksad_KSCornerImageView_ksad_bottomLeftCorner:I
+
+    .line 12
+    invoke-virtual {v1, v2, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v2
+
+    .line 13
+    invoke-virtual {v0, v2}, Lcom/kwad/sdk/widget/h$a;->ci(Z)Lcom/kwad/sdk/widget/h$a;
+
+    .line 14
+    invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 15
+    new-instance v1, Lcom/kwad/sdk/widget/h;
+
+    invoke-direct {v1, v0}, Lcom/kwad/sdk/widget/h;-><init>(Lcom/kwad/sdk/widget/h$a;)V
+
+    iput-object v1, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    .line 16
+    invoke-virtual {v1, p1, p2}, Lcom/kwad/sdk/widget/h;->initAttrs(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected dispatchDraw(Landroid/graphics/Canvas;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0, p1}, Lcom/kwad/sdk/widget/h;->beforeDispatchDraw(Landroid/graphics/Canvas;)V
+
+    .line 2
+    invoke-super {p0, p1}, Landroid/widget/Button;->dispatchDraw(Landroid/graphics/Canvas;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0, p1}, Lcom/kwad/sdk/widget/h;->afterDispatchDraw(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method public draw(Landroid/graphics/Canvas;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0, p1}, Lcom/kwad/sdk/widget/h;->beforeDraw(Landroid/graphics/Canvas;)V
+
+    .line 2
+    invoke-super {p0, p1}, Landroid/widget/Button;->draw(Landroid/graphics/Canvas;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0, p1}, Lcom/kwad/sdk/widget/h;->afterDraw(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method public getCornerConf()Lcom/kwad/sdk/widget/h$a;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0}, Lcom/kwad/sdk/widget/h;->getCornerConf()Lcom/kwad/sdk/widget/h$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected onSizeChanged(IIII)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/Button;->onSizeChanged(IIII)V
+
+    .line 2
+    iget-object p3, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {p3, p1, p2}, Lcom/kwad/sdk/widget/h;->onSizeChanged(II)V
+
+    return-void
+.end method
+
+.method public setRadius(F)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/kwad/components/core/widget/KSCornerButton;->mViewRCHelper:Lcom/kwad/sdk/widget/h;
+
+    invoke-virtual {v0, p1}, Lcom/kwad/sdk/widget/h;->setRadius(F)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/Button;->postInvalidate()V
+
+    return-void
+.end method

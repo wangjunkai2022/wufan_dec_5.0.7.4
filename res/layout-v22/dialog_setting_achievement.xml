@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/wdp85">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/wdp85" layout="@layout/dialog_setting_header" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llUserInfo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/wdp44">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivAvatar" android:layout_width="@dimen/wdp52" android:layout_height="@dimen/wdp52" app:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/white" android:id="@id/tvUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed-medium" android:layout_marginStart="@dimen/wdp14" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@drawable/divider_8dp" android:layout_width="fill_parent" android:layout_height="@dimen/wdp8" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_slog_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_type" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="@dimen/wdp378" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:overScrollMode="never" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_gradient_bg_achievement_header" android:layout_width="fill_parent" android:layout_height="@dimen/wdp58" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20" android:layout_marginEnd="@dimen/wdp42" android:layout_marginVertical="@dimen/wdp20">
+                <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/wdp42" android:src="@drawable/ic_title_achievement" android:adjustViewBounds="true" android:minWidth="@dimen/wdp30" android:layout_marginStart="@dimen/wdp16" />
+                <TextView android:textSize="@dimen/wdp22" android:textColor="#ff94d7ff" android:id="@id/tvProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你已完成10/100" android:layout_marginStart="@dimen/wdp6" />
+                <ProgressBar android:id="@id/progressBar" android:layout_width="0.0dip" android:layout_height="@dimen/wdp7" android:layout_marginLeft="@dimen/wdp12" android:progress="10" android:progressDrawable="@drawable/progress_achievement" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+                <ImageView android:id="@id/ivTips" android:paddingLeft="@dimen/wdp15" android:paddingRight="@dimen/wdp15" android:visibility="visible" android:layout_width="@dimen/wdp54" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/wdp15" android:layout_marginRight="@dimen/wdp15" android:src="@drawable/ic_exc_mark" android:adjustViewBounds="true" android:layout_marginHorizontal="@dimen/wdp15" android:paddingHorizontal="@dimen/wdp15" />
+            </LinearLayout>
+            <com.papa91.arc.widget.listview.ListViewFinal android:id="@id/lv_achievement_all" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp42" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/wdp20" android:overScrollMode="never" />
+            <com.papa91.arc.widget.listview.ListViewFinal android:id="@id/lv_achievement_unlock" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp42" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/wdp20" android:overScrollMode="never" />
+            <com.papa91.arc.widget.listview.ListViewFinal android:id="@id/lv_achievement_lock" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wdp42" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/wdp20" android:overScrollMode="never" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/arena_no_play" />
+                <TextView android:textSize="27.0px" android:textColor="#ffa8a8a8" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0px" android:text="暂无数据" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

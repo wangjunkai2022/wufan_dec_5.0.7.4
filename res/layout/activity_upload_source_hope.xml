@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_upload_source_hope_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back_image" android:tag="binding_1" android:paddingTop="@dimen/wdp32" android:paddingBottom="@dimen/wdp32" android:visibility="visible" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp97" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/title_textview" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/TextViewStyle_16sp" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/main_content" android:background="#fff7f8f9" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wdp40" android:paddingRight="@dimen/wdp40" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp31" android:text="分类标签" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp30" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+                <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp54" android:text="资源描述" />
+                <EditText android:textSize="@dimen/wdp24" android:textColor="#ff4a4a4a" android:gravity="center|left|top" android:id="@id/et_content" android:tag="binding_3" android:background="@drawable/shape_bcbcbc_stroke_r_12" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp266" android:layout_marginTop="@dimen/wdp30" android:hint="请详细橡树资源内容及特点～" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp54" android:text="资源上传" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/v_tip_link" android:background="@drawable/shape_fff_r8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp40">
+                <ImageView android:id="@id/iv_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp16" android:src="@drawable/ic_quark_share_link" />
+                <TextView android:textSize="@dimen/wdp26" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp12" android:text="请将资源放入网盘，以链接形式上传" />
+            </LinearLayout>
+            <EditText android:textSize="@dimen/wdp24" android:textColor="#ffbcbcbc" android:gravity="center|left|top" android:id="@id/et_content_link" android:tag="binding_4" android:background="@drawable/shape_bcbcbc_stroke_r_12" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp266" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp40" android:hint="请输入资源呢链接地址～" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_upload" android:tag="binding_5" android:background="@drawable/shape_489cff_r8" android:layout_width="@dimen/wdp410" android:layout_height="@dimen/wdp78" android:layout_marginLeft="@dimen/wdp36" android:layout_marginTop="@dimen/wdp85" android:layout_marginRight="@dimen/wdp36" android:layout_marginBottom="@dimen/wdp79" android:text="上传资源" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+.class Lcom/join/mgps/activity/CreateEndGameActivity_$f;
+.super Ljava/lang/Object;
+.source "CreateEndGameActivity_.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/join/mgps/activity/CreateEndGameActivity_;->onViewChanged(La4/a;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lcom/join/mgps/activity/CreateEndGameActivity_;
+
+
+# direct methods
+.method constructor <init>(Lcom/join/mgps/activity/CreateEndGameActivity_;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/activity/CreateEndGameActivity_$f;->b:Lcom/join/mgps/activity/CreateEndGameActivity_;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lcom/join/mgps/activity/CreateEndGameActivity_$f;->b:Lcom/join/mgps/activity/CreateEndGameActivity_;
+
+    invoke-virtual {p1}, Lcom/join/mgps/activity/CreateEndGameActivity;->r0()V
+
+    return-void
+.end method

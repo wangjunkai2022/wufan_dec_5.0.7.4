@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/tvTitleForum" android:layout_width="wrap_content" android:layout_height="@dimen/wdp34" android:layout_marginTop="@dimen/wdp40" android:layout_marginBottom="@dimen/wdp10" android:src="@drawable/ic_wufun_forum_title" android:adjustViewBounds="true" android:fontFamily="sans-serif-condensed-medium" android:layout_marginStart="@dimen/wdp30" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+.class Lcom/join/mgps/activity/SearchListActivity1$j$c;
+.super Ljava/lang/Object;
+.source "SearchListActivity1.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/join/mgps/activity/SearchListActivity1$j;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public a:Landroid/widget/ImageView;
+
+.field public b:Landroid/widget/ImageView;
+
+.field public c:Landroid/view/View;
+
+.field public d:Landroid/widget/TextView;
+
+.field final synthetic e:Lcom/join/mgps/activity/SearchListActivity1$j;
+
+
+# direct methods
+.method private constructor <init>(Lcom/join/mgps/activity/SearchListActivity1$j;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/activity/SearchListActivity1$j$c;->e:Lcom/join/mgps/activity/SearchListActivity1$j;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/join/mgps/activity/SearchListActivity1$j;Lcom/join/mgps/activity/SearchListActivity1$a;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lcom/join/mgps/activity/SearchListActivity1$j$c;-><init>(Lcom/join/mgps/activity/SearchListActivity1$j;)V
+
+    return-void
+.end method

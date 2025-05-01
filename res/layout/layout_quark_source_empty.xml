@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_empty" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/noneReloadImage" android:layout_width="@dimen/wdp126" android:layout_height="@dimen/wdp126" android:layout_marginTop="@dimen/wdp268" android:src="@drawable/ic_source_empty" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp14">
+        <TextView android:textSize="@dimen/spx_28" android:textColor="#ff908f8f" android:id="@id/noneMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜不到相关内容？" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff489cff" android:id="@id/tv_hope_add" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去许愿" android:drawableRight="@drawable/ic_source_arrow_right_blue" android:drawablePadding="@dimen/wdp6" />
+    </LinearLayout>
+</LinearLayout>

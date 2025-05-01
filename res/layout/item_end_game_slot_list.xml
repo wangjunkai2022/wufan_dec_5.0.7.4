@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/item_end_game_slot_list_0" android:background="@drawable/bg_game_detail_archive_cloud_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:tag="binding_1" android:layout_width="@dimen/wdp205" android:layout_height="@dimen/wdp115" android:layout_marginLeft="@dimen/wdp18" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20" app:actualImageScaleType="centerCrop" app:fadeDuration="0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_2" android:paddingLeft="@dimen/wdp24" android:paddingTop="@dimen/wdp24" android:paddingRight="@dimen/wdp24" android:paddingBottom="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/wdp28" android:textColor="#ff2a2a2a" android:ellipsize="end" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp58" android:singleLine="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff9ea5ad" android:ellipsize="end" android:id="@id/tv_time" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp18" android:lines="1" />
+        </LinearLayout>
+        <CheckBox android:tag="binding_5" android:layout_width="@dimen/wdp28" android:layout_height="@dimen/wdp28" android:layout_marginRight="@dimen/wdp20" android:button="@drawable/ic_chk_simulator" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_end_game_slot_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96">
+        <ImageView android:id="@id/iv_back" android:tag="binding_1" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="18" android:layout_centerInParent="true" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_customer" android:tag="binding_3" android:background="@drawable/btn_4cadff_r4_selector" android:layout_width="@dimen/wdp122" android:layout_height="@dimen/wdp48" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp40" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingTop="@dimen/wdp23" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_nodata" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/ic_empty_monkey" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/wdp26" android:textStyle="bold" android:textColor="#ffb9c2cc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="暂无存档!" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" />
+    </RelativeLayout>
+</LinearLayout>

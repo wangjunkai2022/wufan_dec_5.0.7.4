@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/wdp244" android:layout_height="@dimen/wdp226" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/wdp18" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/wdp120" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp35" android:src="@drawable/icon_clean_success" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff262626" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp41" android:text="清理成功" android:fontFamily="sans-serif-condensed-medium" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

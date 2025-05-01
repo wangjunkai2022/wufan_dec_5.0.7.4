@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="@dimen/wdp326" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundedCornerRadius="@dimen/wdp12" app:viewAspectRatio="1.788" />
+    <TextView android:textSize="@dimen/wdp28" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_game_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:singleLine="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/sdv_image" />
+    <TextView android:textSize="@dimen/wdp18" android:textColor="#ffc1c1c1" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:text="射击" app:layout_constraintLeft_toLeftOf="@id/tv_game_name" app:layout_constraintTop_toBottomOf="@id/tv_game_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

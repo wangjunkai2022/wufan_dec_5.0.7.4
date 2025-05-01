@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.mgps.customview.KeyboardListenLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/actionbarLayout" layout="@layout/mg_forum_title_detail_layout" />
+    <view android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbarLayout" class="com.join.mgps.customview.CustomLoadingView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout android:id="@id/csl_view" android:scrollbars="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" app:autoAdjustHeightAtBottomView="true">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_head" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <View android:background="#fff2f4f8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp8" />
+                    <com.join.mgps.customview.ForumStickView android:id="@id/fsv_stick" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" app:layout_isSticky="true" />
+                    <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" />
+                    <com.join.android.app.component.xrecyclerview.XQuickRecyclerView android:id="@id/rv_comment_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <include android:id="@id/view_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_rv_list_empty" />
+                </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+                <FrameLayout android:id="@id/videoContainer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_layout" />
+                </FrameLayout>
+            </RelativeLayout>
+            <include android:id="@id/layout_chat_cell_container" layout="@layout/include_chat_bottom_bar1" />
+        </LinearLayout>
+    </view>
+    <View android:layout_gravity="bottom" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</com.join.mgps.customview.KeyboardListenLayout>

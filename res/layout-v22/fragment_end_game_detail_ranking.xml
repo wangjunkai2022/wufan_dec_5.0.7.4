@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/wdp8" />
+        <RelativeLayout android:id="@id/rankRoot" android:background="#fff9ffed" android:layout_width="fill_parent" android:layout_height="@dimen/wdp98">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivAvatar" android:layout_width="@dimen/wdp62" android:layout_height="@dimen/wdp62" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="@dimen/wdp26" android:layout_alignParentStart="true" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc1c1c1" android:ellipsize="end" android:id="@id/tvRank" android:paddingLeft="@dimen/wdp18" android:paddingRight="@dimen/wdp18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp12" android:text="第1000+名" android:maxLines="1" android:layout_alignParentBottom="true" android:fontFamily="sans-serif-condensed-medium" android:layout_toStartOf="@id/ivRankChange" android:layout_toEndOf="@id/ivAvatar" android:paddingHorizontal="@dimen/wdp18" />
+            <TextView android:textSize="@dimen/wdp30" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tvUsername" android:paddingLeft="@dimen/wdp20" android:paddingRight="@dimen/wdp20" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wdp10" android:text="阿伟已" android:maxLines="1" android:layout_toStartOf="@id/ivRankChange" android:layout_toEndOf="@id/ivAvatar" android:paddingHorizontal="@dimen/wdp20" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ff5f6060" android:gravity="end|center" android:id="@id/tvScoreTime" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/wdp86" android:text="3.21秒" android:layout_toStartOf="@id/ivPlayVideo" />
+            <TextView android:textSize="@dimen/wdp24" android:textColor="#ff4ab2ff" android:gravity="start|center" android:id="@id/tvRankChange" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/wdp30" android:text="20" android:layout_toStartOf="@id/tvScoreTime" />
+            <ImageView android:id="@id/ivRankChange" android:visibility="gone" android:layout_width="@dimen/wdp14" android:layout_height="wrap_content" android:src="@drawable/ic_rank_up" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp6" android:layout_toStartOf="@id/tvRankChange" />
+            <ImageView android:id="@id/ivPlayVideo" android:paddingTop="@dimen/wdp34" android:paddingBottom="@dimen/wdp34" android:layout_width="@dimen/wdp78" android:layout_height="fill_parent" android:src="@drawable/ic_end_game_play_video" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/wdp34" />
+        </RelativeLayout>
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/wdp10" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvRank" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

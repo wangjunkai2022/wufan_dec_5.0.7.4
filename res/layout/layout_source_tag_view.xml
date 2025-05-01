@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/wdp22" android:textColor="#ffff4d4d" android:id="@id/tv_title" android:paddingLeft="@dimen/wdp6" android:paddingTop="@dimen/wdp3" android:paddingRight="@dimen/wdp6" android:paddingBottom="@dimen/wdp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/papa_title_back" android:layout_width="fill_parent" android:layout_height="@dimen/wdp96">
+        <ImageView android:id="@id/iv_back" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建残局" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="sans-serif-condensed-medium" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ff3ca4fd" android:gravity="center" android:id="@id/tv_customer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="客服" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp40" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:layout_width="@dimen/wdp640" android:layout_height="@dimen/wdp283" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp40" app:cardBackgroundColor="#fffafafa" app:cardCornerRadius="@dimen/wdp8" app:cardElevation="0.0dip">
+                <RelativeLayout android:id="@id/rl_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.join.android.app.component.video.StandardVideoView android:id="@id/svv_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/iv_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <ImageView android:id="@id/iv_delete_video" android:padding="@dimen/wdp3" android:layout_width="@dimen/wdp31" android:layout_height="@dimen/wdp39" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp20" android:src="@drawable/delete" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_choose_video" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="@dimen/wdp56" android:layout_height="wrap_content" android:src="@drawable/ic_end_game_choose_video" />
+                    <TextView android:textSize="@dimen/wdp26" android:textColor="#ffb7b7b7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp12" android:text="上传本人挑战通过的\n视频证明" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff4cadff" android:background="@drawable/shape_fafafa_r12" android:paddingLeft="@dimen/wdp20" android:paddingTop="@dimen/wdp11" android:paddingRight="@dimen/wdp20" android:paddingBottom="@dimen/wdp11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" android:text="*请认真编辑，好的内容更容易通过官方审核" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_end_game_comment" android:paddingLeft="@dimen/wdp40" android:paddingTop="@dimen/wdp17" android:paddingRight="@dimen/wdp40" android:paddingBottom="@dimen/wdp37" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+                <EditText android:textSize="@dimen/wdp26" android:textColorHint="#ffb4abab" android:gravity="top" android:id="@id/et_title" android:background="@null" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="@dimen/wdp77" android:hint="残局标题" android:maxLines="1" android:singleLine="true" android:maxLength="20" />
+                <EditText android:textSize="@dimen/wdp26" android:textColorHint="#ffb4abab" android:gravity="top" android:id="@id/et_desc" android:background="@null" android:padding="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp98" android:hint="详细说明 (例如使用残血张飞击败曹操)" android:maxLines="10" android:maxLength="100" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="@dimen/wdp32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_commit" android:background="@drawable/btn_289dff_dfdfdf_r_6" android:layout_width="fill_parent" android:layout_height="@dimen/wdp80" android:layout_marginLeft="@dimen/wdp40" android:layout_marginTop="@dimen/wdp20" android:layout_marginRight="@dimen/wdp40" android:layout_marginBottom="@dimen/wdp66" android:text="提交" />
+</LinearLayout>

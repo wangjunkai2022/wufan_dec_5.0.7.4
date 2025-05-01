@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/actionBar" layout="@layout/mg_forum_title_layout" />
+    <View android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="@dimen/wdp10" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llMain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp24">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉游戏：" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:id="@id/tvFeedBackGameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="三国战纪" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉反馈：" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:id="@id/tvFeedBackReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="侵权抄袭" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10">
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉说明：" />
+            <TextView android:textSize="@dimen/wdp26" android:textColor="#ff2a2a2a" android:id="@id/tvFeedBackDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请上传证据截图" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa5a5a5" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="2022-10-10" android:layout_marginStart="@dimen/wdp30" />
+        <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="@dimen/wdp1" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp24" android:layout_marginRight="@dimen/wdp30" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvComment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" android:layout_weight="1.0" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#12000000" android:layout_width="0.0dip" android:layout_height="@dimen/wdp1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <EditText android:textSize="@dimen/wdp30" android:textColor="#ff686868" android:textColorHint="#ffb4abab" android:id="@id/etComment" android:background="@drawable/shape_bg_et_message_feedback" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp15" android:paddingRight="@dimen/wdp30" android:paddingBottom="@dimen/wdp15" android:layout_width="0.0dip" android:layout_height="@dimen/wdp72" android:layout_marginTop="@dimen/wdp14" android:layout_marginBottom="@dimen/wdp14" android:hint="输入内容" android:layout_marginStart="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tvSend" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/wdp32" android:textColor="#ffc8c9cb" android:gravity="center" android:id="@id/tvSend" android:paddingLeft="@dimen/wdp38" android:paddingRight="@dimen/wdp38" android:layout_width="wrap_content" android:layout_height="@dimen/wdp72" android:text="发送" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/etComment" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <include layout="@layout/loding_layout_include" />
+    <include layout="@layout/failed_layout_include" />
+</LinearLayout>

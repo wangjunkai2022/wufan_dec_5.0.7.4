@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/wdp114" android:paddingRight="@dimen/wdp20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/forum_posts_activity_comment_message" android:textColor="#ff343434" android:ellipsize="end" android:autoLink="web" android:id="@id/comment_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="标题" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

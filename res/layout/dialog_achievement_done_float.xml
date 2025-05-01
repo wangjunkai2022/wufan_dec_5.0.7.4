@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="#f0232a36" android:paddingLeft="@dimen/wdp14" android:paddingTop="@dimen/wdp12" android:paddingRight="@dimen/wdp14" android:paddingBottom="@dimen/wdp12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp430"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivAchievement" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffc1d0dd" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜你解锁成就【招降夏侯渊】" android:layout_marginStart="@dimen/wdp15" app:layout_constraintStart_toEndOf="@id/ivAchievement" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp22" android:textColor="#ffb3b4b6" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:text="10%玩家解锁此成就" app:layout_constraintStart_toStartOf="@id/tvTitle" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_source_hope_tag_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp26" android:gravity="center" android:id="@id/tv_text" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/wdp60" android:layout_centerHorizontal="true" />
+</RelativeLayout>

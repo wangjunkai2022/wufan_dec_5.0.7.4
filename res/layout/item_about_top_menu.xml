@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/papaLayout" android:layout_width="fill_parent" android:layout_height="@dimen/wdp94">
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff343434" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/set_item_magin_L_R" android:text="官方网址" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp26" android:textColor="#ffc3c3c3" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wdp68" android:text="www.5fun.com" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp26" android:layout_marginRight="@dimen/wdp30" android:src="@drawable/ic_arrow_light_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

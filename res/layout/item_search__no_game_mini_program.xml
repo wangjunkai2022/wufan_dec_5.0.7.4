@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp20" android:layout_marginTop="@dimen/wdp10" android:layout_marginRight="@dimen/wdp20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/wdp248" fresco:cardCornerRadius="@dimen/wdp8" fresco:cardElevation="0.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_image" android:layout_width="fill_parent" android:layout_height="@dimen/wdp248" fresco:failureImage="@drawable/main_normal_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@drawable/main_normal_icon" fresco:placeholderImageScaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/wdp98" android:layout_marginTop="@dimen/wdp20">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_line_left" />
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#fffb6c08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wdp8" android:layout_marginRight="@dimen/wdp8" android:text="为你推荐" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_line_right" />
+    </LinearLayout>
+</LinearLayout>

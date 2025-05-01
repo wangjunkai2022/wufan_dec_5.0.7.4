@@ -1,0 +1,31 @@
+package com.join.mgps.dto;
+/* loaded from: classes4.dex */
+public class ArenaUser {
+    private int create_money;
+    private int join_money;
+    private int money;
+
+    public int getCreate_money() {
+        return this.create_money;
+    }
+
+    public int getJoin_money() {
+        return this.join_money;
+    }
+
+    public int getMoney() {
+        return this.money;
+    }
+
+    public void setCreate_money(int i4) {
+        this.create_money = i4;
+    }
+
+    public void setJoin_money(int i4) {
+        this.join_money = i4;
+    }
+
+    public void setMoney(int i4) {
+        this.money = i4;
+    }
+}

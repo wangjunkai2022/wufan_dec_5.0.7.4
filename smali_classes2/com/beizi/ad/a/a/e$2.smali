@@ -1,0 +1,75 @@
+.class Lcom/beizi/ad/a/a/e$2;
+.super Ljava/lang/Object;
+.source "ShakeUtil.java"
+
+# interfaces
+.implements Lcom/beizi/ad/internal/utilities/ImageManager$BitmapLoadedListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/beizi/ad/a/a/e;->a(Landroid/view/ViewGroup;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Landroid/widget/ImageView;
+
+.field final synthetic b:Lcom/beizi/ad/a/a/e;
+
+
+# direct methods
+.method constructor <init>(Lcom/beizi/ad/a/a/e;Landroid/widget/ImageView;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/beizi/ad/a/a/e$2;->b:Lcom/beizi/ad/a/a/e;
+
+    iput-object p2, p0, Lcom/beizi/ad/a/a/e$2;->a:Landroid/widget/ImageView;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onBitmapLoadFailed()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onBitmapLoaded(Landroid/graphics/Bitmap;)V
+    .locals 1
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lcom/beizi/ad/a/a/e$2;->a:Landroid/widget/ImageView;
+
+    if-eqz v0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_0
+    :goto_0
+    return-void
+.end method

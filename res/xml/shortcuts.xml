@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/icon" android:enabled="true">
+        <intent android:targetPackage="com.join.android.app.mgsim.wufun" android:action="android.intent.action.VIEW" android:targetClass="com.join.mgps.activity.MGMainActivity_" />
+    </shortcut>
+</shortcuts>
